@@ -1,4 +1,6 @@
-# template cloudflare worker
+# template hono
+
+The simplest possible template for Hono apps 
 
 A template for applications using [preact](https://preactjs.com/), [htm](https://github.com/developit/htm/tree/master), [typescript](https://www.typescriptlang.org/), and [cloudflare](https://www.cloudflare.com/) as host. Use
 [tapout](https://github.com/substrate-system/tapout)
