@@ -32,6 +32,7 @@
     "@substrate-system/debug": "^0.9.38",
     "@substrate-system/tapout": "^0.0.33",
     "@substrate-system/tapzero": "^0.10.16",
+    "@types/node": "^25.6.0",
     "@typescript-eslint/eslint-plugin": "^8.18.2",
     "@typescript-eslint/parser": "^8.19.1",
     "auto-changelog": "^2.4.0",

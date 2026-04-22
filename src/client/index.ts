@@ -1,5 +1,5 @@
 import { html } from 'htm/preact'
-import { FunctionComponent, render } from 'preact'
+import { type FunctionComponent, render } from 'preact'
 import { useComputed } from '@preact/signals'
 import Debug from '@substrate-system/debug'
 import ky from 'ky'

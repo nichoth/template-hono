@@ -101,3 +101,11 @@ state object, and sets up URL routing.
 
 In the view code, you would call the functions exposed in
 [state](./src/state.ts) with a state instance in response to application events.
+
+## Generate a Password
+
+For the staging branch deploy, for example.
+
+```sh
+openssl rand -base64 32
+```
