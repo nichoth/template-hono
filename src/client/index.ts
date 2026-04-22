@@ -24,7 +24,7 @@ export const Example:FunctionComponent = function Example () {
     debug('rendering example...')
     const match = useComputed(() => router.match(state.route.value))
 
-    if (!match.value) {
+    if (!match.value || !match.value.action) {
         return html`<div class="404">
             <h1>404</h1>
         </div>`

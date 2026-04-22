@@ -1,10 +1,13 @@
 # template hono
 
-The simplest possible template for Hono apps 
+The simplest possible template for Hono + Preact apps 
 
-A template for applications using [preact](https://preactjs.com/), [htm](https://github.com/developit/htm/tree/master), [typescript](https://www.typescriptlang.org/), and [cloudflare](https://www.cloudflare.com/) as host. Use
-[tapout](https://github.com/substrate-system/tapout)
-for tests in a browser environment.
+A template for applications using [preact](https://preactjs.com/),
+[htm](https://github.com/developit/htm/tree/master),
+[typescript](https://www.typescriptlang.org/),
+and [cloudflare](https://www.cloudflare.com/) as host, and
+[tapout](https://github.com/substrate-system/tapout) for tests in a
+browser environment.
 
 See
 [template-ts-preact-htm-app](https://github.com/nichoth/template-ts-preact-htm-app)
@@ -29,9 +32,8 @@ for something similar, but for dependency modules.
 
 ## Use
 
-1. Use the template button in github. Or clone this then
-   `rm -rf .git && git init`. 
-2. Then `npm i && npm init`.
+1. Use the template button in github.
+2. `npm i && npm init`.
 3. Edit the source code in `src/`.
 4. Setup the environment variables:
    ```sh
@@ -54,6 +56,7 @@ for something similar, but for dependency modules.
   [route-event](https://github.com/nichoth/route-event) and
   [@substrate-system/routes](https://github.com/substrate-system/routes)
 
+
 ## Develop
 
 Use the vite Cloudflare plugin to start a local dev environment.
@@ -68,6 +71,7 @@ Use the Cloudflare GUI to import your repo.
 
 Deploy from the CLI with `npx wrangler deploy`.
 
+
 ### Staging
 
 The staging environment is protected by basic auth. To set it up:
@@ -81,8 +85,9 @@ The staging environment is protected by basic auth. To set it up:
    wrangler deploy --env staging
    ```
 
-When visiting the staging site, use `staging` as the username and the
+When visiting the staging site, use `addmin` as the username and the
 secret you configured as the password.
+
 
 ## Frontend Architecture
 
@@ -96,5 +101,3 @@ state object, and sets up URL routing.
 
 In the view code, you would call the functions exposed in
 [state](./src/state.ts) with a state instance in response to application events.
-
-## Notes

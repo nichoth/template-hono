@@ -6,6 +6,11 @@ body {
     }
 }
 
+#root {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
 .count-controls {
     list-style: none;
     padding: 0;

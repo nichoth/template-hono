@@ -22,14 +22,15 @@ export function State ():{
      * set the app state to match the browser URL
      */
     onRoute((path:string, data) => {
-        // for github pages
-        const newPath = path.replace('/template-ts-preact-htm/', '/')
-        state.route.value = newPath
+        if (state.route.value !== path) {
+            state.route.value = path
+        }
         // handle scroll state like a web browser
         // (restore scroll position on back/forward)
         if (data.popstate) {
             return window.scrollTo(data.scrollX, data.scrollY)
         }
+
         // if this was a link click (not back button), then scroll to top
         window.scrollTo(0, 0)
     })

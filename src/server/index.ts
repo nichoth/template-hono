@@ -18,7 +18,7 @@ const app = new Hono<{ Bindings:Bindings }>()
 app.use('*', async (c, next) => {
     if (c.env.STAGING_AUTH !== 'true') return next()
     const auth = basicAuth({
-        username: 'staging',
+        username: 'admin',
         password: c.env.STAGING_PASSWORD || '',
     })
     return auth(c, next)
